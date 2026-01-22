@@ -1,0 +1,49 @@
+Week 2 Lab Task 2
+
+
+	Variables: 
+			Name			Representation			Data Structure
+
+			playerCount		number of players		number
+			currentNumber		number the count is on		number
+			currentPlayer		current player counting		number
+			direction		direction of player turn	Boolean
+			skipNumber		number being used to skip	number
+			directionNumber		number being used to change	number
+						direction of turns		
+			goalNumber		number for "winner"		number
+			winningPlayer		number for player on goal	number
+
+
+	Loops:		
+
+			Name			Function			Associated Variables
+
+			N/A			N/A				N/A
+
+	Non-Looping:
+			Name			Function			Associated variables
+
+			setUpGame		starts the game			playerCount, direction, 											currentNumber, currentPlayer,
+										goalNumber, skipNumber, 
+										directionNumber
+
+			checkDivisible		check for divisibility		currentNumber, skipNumber,
+										directionNumber
+			
+			checkWinner		check the player on goal	winningPlayer, currentPlayer,
+										goalNumber
+
+			setPlayer		set the player to go next	currentPlayer, direction
+
+	Structure
+
+			Function		Result
+		
+			setUpGame		Sets up the game
+			
+			checkDivisible		Ran on each turn, checks for divisibility on each players turn
+
+			setPlayer		(Ran inside of checkDivisible) Sets the player for next turn
+
+			checkWinner		checks if the currentPlayer is on the goalNumber, aka the winner
