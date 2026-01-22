@@ -1,0 +1,41 @@
+Lab Task 1:
+
+	Variables: 
+			Names			Representation		Data Structure
+			
+			gridSize		grid size (3x3)		Array
+			player1Mark		player1 mark		string or number
+			player2Mark		player2 mark		string or number
+			player1Move		player1 move		2 value array
+			player2Move		player2 move		2 value array
+			player1History		player1 move history	array containing 2 value arrays
+			player2History		player2 move history	array containing 2 value arrays
+			currentTurn		sets player turn	string or number
+			winCheck		check if someone won	Boolean
+
+	Loops:
+			Name			Function			Associated Variables
+
+
+			checkForWinner		check for a winner using	winCheck, player1History, 							player move history or		player2History, gridSize
+						if game grid is full		
+
+	Non-Looping:
+			Name			Function			Associated variables
+
+			setUpGame		create a grid for the game	gridSize, player1Mark, player2Mark
+ 						and assign player marks
+
+ 			saveMove		save a player's move		player1Move, player2Move,
+ 						and swap player turn		player1History, player2History
+ 										currentTurn
+	Structure:
+			Function		Result
+
+			setUpGame		The game is created
+
+			saveMove		A player makes a move and it is saved, the turn is changed.
+
+			checkForWinner		(Ran inside of saveMove) checks for a winner
+
+			REPEAT THE ABOVE UNTIL A WINNER IS FOUND
